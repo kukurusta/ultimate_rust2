@@ -40,7 +40,8 @@ fn main() {
     // Hint: .to_uppercase() is a method on `str` which returns a String
 
     let words = vec!["autobot", "beach", "car", "decepticon", "energon", "frothy"];
-    let transformed = words.into_iter()
+    let transformed = words
+        .into_iter()
         .filter(|&x| !x.contains('h'))
         .map(|x| x.to_uppercase())
         .collect::<Vec<_>>();
